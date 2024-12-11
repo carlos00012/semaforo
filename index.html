@@ -1,0 +1,46 @@
+
+<!DOCTYPE html> <!-- Indica el formato del archivo -->
+<html lang="es"> <!-- Indica el inicio del codigo HTML -->
+
+<head>
+    <!--palabras claves para motores de busqueda-->
+    <meta keywords="gestion,sistemas,quinto">
+
+    <!--Tipo de codificación de los archivos html -->
+    <meta charset="Uft-8"> <!--UTF-8 acepta caracteres especiales-->
+
+    <!--Titulo de la interfaz-->
+    <title>HTML</title>
+    <!--Referenciar al css-->
+    <link rel="stylesheet" href="circulo.css"> <!--Archivo css-->
+</head> <!-- Espacio de importacion de librerias y metadata-->
+
+<body> <!--Contenido del html-->
+    <header>
+        <h1 >
+           <p class="card-text"><center>Semaforo </center></p> 
+        </h1>
+    </header>
+    <main>
+        <html><center><div id="rectangulo"><br>
+            <div class="row">
+                <html><center> <div id="circulo1"></div></center>
+                <html><center> <div id="circulo2"></div></center>
+                <html><center> <div id="circulo3"></div></center>
+            </div>
+            <br>
+            <button class="btn btn-success" onclick="cambiarColor('circulo1','chartreuse'),cambiarColor('circulo2','white'),cambiarColor('circulo3','white')">Cambiar_Color_Verde</button> 
+            <button class="btn btn-success" onclick="cambiarColor('circulo1','white'),cambiarColor('circulo2','gold'),cambiarColor('circulo3','white')">Cambiar_Color_Amarillo</button>
+            <button class="btn btn-success" onclick="cambiarColor('circulo1','white'),cambiarColor('circulo2','white'),cambiarColor('circulo3','crimson')">Cambiar_Color_Rojo</button>
+           
+        </div></center></html>
+           
+        </html>
+    </main>
+    <script>
+        function cambiarColor(idElemento,color){
+            const d = document.getElementById(idElemento); //cambiamos el color con el id de cada uno
+            d.style.backgroundColor =color;
+        }
+    </script>
+</body>
