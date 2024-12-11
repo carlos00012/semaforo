@@ -14,6 +14,7 @@
     <!--Referenciar al css-->
     
     <link rel="stylesheet" href="circulo.css"> <!--Archivo css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head> <!-- Espacio de importacion de librerias y metadata-->
 
 <body> <!--Contenido del html-->
@@ -24,21 +25,22 @@
     </header>
     <main>
         <html><center><div id="rectangulo"><br>
-            <div class="row">
+            <div >
                 <html><center> <div id="circulo1"></div></center><br>
                 <html><center> <div id="circulo2"></div></center><br>
                 <html><center> <div id="circulo3"></div></center>
             </div>
-            <br>
-            <button class="btn btn-success" onclick="cambiarColor('circulo1','chartreuse'),cambiarColor('circulo2','white'),cambiarColor('circulo3','white')">Verde</button> 
-            <button class="btn btn-success" onclick="cambiarColor('circulo1','white'),cambiarColor('circulo2','gold'),cambiarColor('circulo3','white')">Amarillo</button>
-            <button class="btn btn-success" onclick="cambiarColor('circulo1','white'),cambiarColor('circulo2','white'),cambiarColor('circulo3','crimson')">Rojo</button>
-           
+                <br>
+                <div class="btn-group" role="group">
+                <button style="background-color: chartreuse;" class="btn btn-second" onclick="cambiarColor('circulo1','chartreuse'),cambiarColor('circulo2','white'),cambiarColor('circulo3','white')">Verde</button> 
+                <button style="background-color:gold" class="btn btn-second" onclick="cambiarColor('circulo1','white'),cambiarColor('circulo2','gold'),cambiarColor('circulo3','white')">Amarillo</button>
+                <button style="background-color:crimson" class="btn btn-second" onclick="cambiarColor('circulo1','white'),cambiarColor('circulo2','white'),cambiarColor('circulo3','crimson')">Rojo</button>
+            </div>
         </div></center></html>
            
         </html>
     </main>
-    <button class="btn btn-info" onclick="window.location.href='https://carlos00012.github.io/Curriculum/';">Pag Principal</button>
+    <button class="btn btn-primary" onclick="window.location.href='https://carlos00012.github.io/Curriculum/';">Pag Principal</button>
     <script>
         function cambiarColor(idElemento,color){
             const d = document.getElementById(idElemento); //cambiamos el color con el id de cada uno
